@@ -23,7 +23,7 @@ app.get('/escola', (req, res) => {
         "cidade" : "São Paulo",
         "tipo" : "Ensino Técnico"
     });
-    res.json(escola)
+    res.json(escola);
 });
 
 app.get('/cursos', (req, res) => {
@@ -40,7 +40,7 @@ app.get('/professor', (req, res) => {
     let professor = {
     "nome" : "Thiago Santos Silva",
     "disciplina" : "Design de Games"
-    }
+    };
     res.json(professor);
 });
 
@@ -66,8 +66,6 @@ app.get('/requisicao', (req, res) => {
         mensagem: 'Solicitação recebida com sucesso!'
     });
 });
-
-
 
 app.listen(PORT, ( ) =>{
     console.log(`Servidor em http://localhost:${PORT}`);
