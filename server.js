@@ -60,7 +60,7 @@ app.get('/ajuda', (req, res) => {
 });
 
 app.get('/requisicao', (req, res) => {
-    return res.json({
+     res.json({
         metodo: req.method,
         caminho: req.path,
         mensagem: 'Solicitação recebida com sucesso!'
